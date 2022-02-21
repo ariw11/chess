@@ -1,7 +1,7 @@
 import java.util.*;
 public class Main {
+    Piece[][] board = Piece.newBoard();
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[][] board = new int[8][8];
     }
 }
