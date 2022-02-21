@@ -4,8 +4,8 @@ public class Piece {
     boolean color;
     public Piece[][] newBoard() {
         Piece[][] result = new Piece[8][8];
-        result[0] = {new Rook(1, 1), new Knight(2, 1), new Bishop(3, 1), new Queen(4, 1), new King(5, 1), new Bishop(6, 1), new Knight(7, 1), new Rook(8, 1)};
-        result[7] = {new Rook(1, 8), new Knight(2, 8), new Bishop(3, 8), new Queen(4, 8), new King(5, 8), new Bishop(6, 8), new Knight(7, 8), new Rook(8, 8)};
+        result[0] = {new Rook(1, 1, true), new Knight(1, 2, true), new Bishop(1, 3, true), new Queen(1, 4, true), new King(1, 5, true), new Bishop(1, 6, true), new Knight(1, 7, true), new Rook(1, 8, true)};
+        result[7] = {new Rook(8, 1, false), new Knight(8, 2, false), new Bishop(8, 3, false), new Queen(8, 4, false), new King(8, 5, falsee), new Bishop(8, 6, false), new Knight(8, 7, false), new Rook(8, 8, false)};
     }
     
     public Piece(int r, int f, boolean c) {
